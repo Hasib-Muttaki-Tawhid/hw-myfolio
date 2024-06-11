@@ -1,0 +1,137 @@
+/* *COMMON CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+body{
+    font-family: "Open Sans", sans-serif;
+}
+
+.container{
+    width: 1170px;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.align-center{
+    align-items: center;
+}
+.btn{
+    text-transform: uppercase;
+    font-weight: 14px;
+    color: #0b1016;
+    background-color: #cfc91d;
+    padding: 19px 43px;
+    display: inline-block;
+}
+
+/* *COMMON CSS END */
+
+/* NAVBAR STARTS */
+
+nav{
+    background-color: #02918b;
+}
+
+nav .row{
+
+}
+
+nav .logo{
+    width: 30%;
+}
+
+nav .menu{
+    width: 70%;
+    text-align: right;
+}
+
+nav .menu ul li{
+    display: inline-block;
+    position: relative;
+}
+
+nav .menu ul li a{
+    color: white;
+    font-weight: 800;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 26px 25px;
+    display: inline-block;
+}
+
+nav .menu ul li a:hover{
+    background-color: rgb(119, 0, 255);
+}
+
+nav ul li .submenu{
+    position: absolute;
+    background-color: purple;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    width: 160px;
+}
+
+nav ul li:hover .submenu{
+    opacity: 1;
+    visibility: visible;
+}
+
+nav ul li .submenu li{
+    display: block;
+}
+nav ul li .submenu li a{
+    padding:12px 15px ;
+    display: block;
+    text-align: center;
+    border-bottom: 1px solid #02918b;
+}
+/*  NAVBAR END */
+/* BG START */
+#banner{
+    background-image: url(../imeges/bg.png);
+    height: 728px;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+}
+#banner .row{
+    height: 100%;
+} 
+#banner .banner_cnt h5{
+    font-size: 30px;
+    font-weight: 400;
+}
+#banner .banner_cnt{
+    width: 100%;
+}
+#banner .banner_cnt h1{
+    font-size: 68px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 30px;
+
+}
+#banner .banner_cnt img{
+    margin: 50px 0;
+
+}
+
+
+/* BG START END */
